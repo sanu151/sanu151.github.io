@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supriyo - Developer Portfolios</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha3-dist/css/bootstrap.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: rgb(0, 0, 33);
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 70px;
+            background-color: rgb(16, 16, 82);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(237, 148, 31);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            font-size: 2.5rem;
+            color: azure;
+        }
+
+        .firstsection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 135px;
+        }
+
+        .firstsection>div {
+            width: 30%;
+        }
+
+        .leftsection {
+            font-size: 2.5rem;
+        }
+
+        .rightsection img {
+            width: 80%;
+        }
+
+        .purple {
+            color: rgb(110, 44, 172);
+        }
+
+        #element {
+            color: rgb(110, 44, 172);
+        }
+
+        .secondsection {
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+        }
+
+        hr {
+            border: 0;
+            background: red;
+            height: 1px;
+            margin: 40px;
+        }
+
+        h1 {
+            font-size: 1.7rem;
+        }
+
+        .textgray {
+            color: gray;
+        }
+
+        .box {
+            background: white;
+            width: 80vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .secondsection .vertical {
+            height: 60px;
+            width: 1px;
+            background-color: white;
+            margin: 0 120px;
+        }
+
+        .image-top {
+            width: 30px;
+            position: relative;
+            top: -52px;
+            left: -9px;
+        }
+
+        .image-top1 {
+            width: 50px;
+            position: relative;
+            top: -52px;
+            left: -9px;
+        }
+
+        .vertical-title {
+            position: relative;
+            top: 40px;
+            width: 170px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 50px;
+            width: 170px;
+            color: gray;
+            font-size: 10px;
+
+        }
+
+        footer {
+            background-color: rgb(37, 23, 61);
+        }
+
+        .footer {
+            display: flex;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer ul {
+            list-style: none;
+        }
+
+        .footer a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .footer a:hover {
+            color: rgb(100, 239, 126);
+            font-size: 1.02rem;
+        }
+
+        .rights {
+            display: flex;
+            justify-content: end;
+            margin-right: 30px;
+        }
+
+        .rights a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .rights a:hover {
+            color: rgb(101, 79, 145);
+        }
+
+        .btn1 {
+            width: 200px;
+            border-width: 4px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                <bold>Supriyo Das</bold>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstsection">
+            <div class="leftsection">
+                Hi, My name is <span class="purple"><b>Supriyo</b></span>
+                <div>I am a passionate</div>
+                <div><span id="element"></span></div>
+                <button onclick="downloadFile()" type="button" name="" id="" class="btn btn-outline-primary btn1" btn-lg
+                    btn-block>Download Resume</button>
+                <button onclick="window.open('https://github.com/sanu151', '_blank');" type="button" name="" id="" class="btn btn-outline-primary btn1" btn-lg btn-block>Visit
+                    GitHub</button>
+            </div>
+            <div class="rightsection">
+                <img src="img1.png" alt="Developer Portfilio">
+            </div>
+        </section>
+        <hr>
+        <section class="secondsection">
+            <span class="textgray">What I have done so far</span>
+            <h1>Work Exprience</h1>
+            <div class="box">
+                <div class="vertical">
+                    <img src="img2.png" alt="developer" class="image-top">
+                    <div class="vertical-title">
+                        Sales executive (2007)
+                    </div>
+                    <div class="vertical-desc">
+                        Jan’07-Aug’07 with Tata Indicom as a Sales executive
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="img2.png" alt="developer" class="image-top">
+                    <div class="vertical-title">
+                        Cheque Pickup Boy (2007 - 2010)
+                    </div>
+                    <div class="vertical-desc">
+                        Sep’07-Jun’10 with Sujit Sen & Co. as Cheque Pickup Boy
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="img4.jpg" alt="developer" class="image-top">
+                    <div class="vertical-title">
+                        Certified Radiographer <br>(2010 - 2014)
+                    </div>
+                    <div class="vertical-desc">
+                        Jul’10-Dec’14 in Sievert India Pvt Ltd as a Certified Radiographer
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="img3.png" alt="developer" class="image-top1">
+                    <div class="vertical-title">
+                        Asst. Technician (2015 - 2019)
+                    </div>
+                    <div class="vertical-desc">
+                        Feb’15-May'19 in ITD Cementation India Limited as an Asst. Technician
+                    </div>
+                </div>
+                <div class="vertical">
+                    <img src="img3.png" alt="developer" class="image-top1">
+                    <div class="vertical-title">
+                        Technical Assistant (2019 - Present)
+                    </div>
+                    <div class="vertical-desc">
+                        Since May'19 in ITD Cementation India Limited as an Technical Assistant
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Supriyo's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/about.html">About</a></li>
+                    <li><a href="/">Services</a></li>
+                    <li><a href="/">Projects</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                <ul>
+                    <li><a href="https://www.facebook.com/Sanu151/" target="_blank">Facebook</a></li>
+                    <li><a href="https://twitter.com/Sanu51" target="_blank">Twiter</a></li>
+                    <li><a href="https://www.linkedin.com/in/supriyo-das-3687241a3/" target="_blank">Linkedin</a></li>
+                    <li><a href="https://wa.me/919932562329" target="_blank">Whatsapp</a></li>
+                </ul>
+            </div>
+            <div class="footer-fourth">
+                <ul>
+                    <li><a href="/">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="rights"><a href="/">www.supriyosportfolio.com </a> | &copy All rights reserved</div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Data Analist', 'Web Designer'],
+            typeSpeed: 50,
+        });
+    </script>
+    <script>
+        function downloadFile() {
+            // Replace "path/to/file.pdf" with the actual file path or URL
+            var fileUrl = "/";
+
+            // Create a hidden anchor element
+            var downloadLink = document.createElement("a");
+            downloadLink.href = fileUrl;
+            downloadLink.download = "resume_supriyo.pdf"; // Specify the desired file name
+
+            // Append the anchor element to the document body
+            document.body.appendChild(downloadLink);
+
+            // Trigger the click event on the anchor element
+            downloadLink.click();
+
+            // Clean up
+            document.body.removeChild(downloadLink);
+        }
+    </script>
+</body>
+
+</html>
