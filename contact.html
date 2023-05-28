@@ -30,8 +30,12 @@
       font-size: 2.2rem;
     }
 
-    .col-md-7 {
-      padding-top: 15px;
+    .my-3 {
+      color: azure;
+    }
+
+    .mb-1{
+      color: bisque;
     }
 
     a {
@@ -56,35 +60,23 @@
     }
 
     footer {
-      padding: 10px;
-      background-color: rgb(37, 23, 61);
-      border-radius: 50px;
-    }
-
-    .footer {
-      display: flex;
-      background-color: rgb(38, 13, 107);
-      justify-content: space-evenly;
-    }
-
-    .footer ul {
-      list-style: none;
-    }
-
-    .footer a {
-      text-decoration: none;
-      color: white;
-    }
-
-    .footer a:hover {
-      color: rgb(100, 239, 126);
-      font-size: 1.02rem;
-    }
-
-    .footer-first {
       display: block;
-      background-color: rgb(38, 13, 107);
-      padding-top: 10px;
+    }
+
+    footer .container {
+      margin-top: 30px;
+      height: 30px;
+    }
+
+    .footer-nav {
+      height: 50px;
+      align-items: center;
+    }
+
+    .fn {
+      height: 70px;
+      background-color: rgb(3, 7, 88);
+      justify-content: center;
     }
   </style>
 </head>
@@ -101,10 +93,10 @@
             <div class="col-md-4"></div>
             <div class="col-md-8">
               <div class="row">
-                <div class="col-3"><a href="/index.html">Home</a></div>
-                <div class="col-3"><a href="/about.html">About</a></div>
-                <div class="col-3"><a href="/project.html">Projects</a></div>
-                <div class="col-3"><a href="/contact.html">Contact Me</a></div>
+                <div class="col-sm-3"><a href="/index.html">Home</a></div>
+                <div class="col-sm-3"><a href="/about.html">About</a></div>
+                <div class="col-sm-3"><a href="/project.html">Projects</a></div>
+                <div class="col-sm-3"><a href="/contact.html">Contact Me</a></div>
               </div>
             </div>
           </div>
@@ -118,15 +110,35 @@
       src="https://docs.google.com/forms/d/e/1FAIpQLSdV9Sf11oohzX8ftKmpRpMeu7YZDdTF8LNSCVJNY7cArj3P2A/viewform?embedded=true"
       width="100%" height="590" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
   </section>
-  <footer class="footer">
-    <nav class="footer-first">
-      <div class="row">
-        <div class="col"><a href="https://www.facebook.com/Sanu151/" target="_blank">Facebook</a></div>
-        <div class="col"><a href="https://twitter.com/Sanu51" target="_blank">Twiter</a></div>
-        <div class="col"><a href="https://www.linkedin.com/in/supriyo-das-3687241a3/" target="_blank">Linkedin</a></div>
-        <div class="col"><a href="https://wa.me/919932562329" target="_blank">Whatsapp</a></div>
+  <footer class="pt-4 pb-4 text-muted text-center d-print-none">
+    <div class="container">
+      <div class="my-3">
+        <div class="h4">Supriyo Das</div>
+        <div class="footer-nav">
+          <nav role="navigation" class="fn">
+            <ul class="nav justify-content-center">
+              <li class="nav-item"><a class="nav-link" href="https://twitter.com/Sanu51" title="Twitter"
+                  target="_blank"><i class="fab fa-twitter"></i><span class="menu-title sr-only">Twitter</span></a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="https://www.facebook.com/Sanu151/" title="Facebook"
+                  target="_blank"><i class="fab fa-facebook"></i><span class="menu-title sr-only">Facebook</span></a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="https://www.linkedin.com/in/supriyo-das-3687241a3/"
+                  title="Linkedin" target="_blank"><i class="fab fa-instagram"></i><span
+                    class="menu-title sr-only">Linkedin</span></a>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="https://github.com/sanu151" title="Github"
+                  target="_blank"><i class="fab fa-github"></i><span class="menu-title sr-only">Github</span></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </nav>
+      <div class="text-small">
+        <div class="mb-1">&copy <a href="sanu151.github.io">Supriyo's portfolio </a> | All rights reserved.
+        </div>
+      </div>
+    </div>
   </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
